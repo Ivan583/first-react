@@ -1,5 +1,5 @@
 import React from "react";
 
-export default function TodoItem() {
-  return <li>Point</li>;
+export default function TodoItem({ task }) {
+  return <li>{task.title}</li>;
 }
