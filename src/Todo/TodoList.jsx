@@ -12,8 +12,8 @@ const styles = {
 export default function TodoList(props) {
   return (
     <ul style={styles.ul}>
-      {props.tasks.map(elem => {
-        return <TodoItem task={elem} key={elem.id} />;
+      {props.tasks.map((elem, i) => {
+        return <TodoItem task={elem} key={elem.id} index={i} />;
       })}
     </ul>
   );
