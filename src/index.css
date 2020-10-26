@@ -25,3 +25,7 @@ code {
   border: none;
   font-weight: bold;
 }
+
+.done {
+  text-decoration: line-through;
+}
