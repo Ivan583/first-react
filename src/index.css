@@ -17,3 +17,11 @@ code {
   margin: 0 auto;
   width: 600px;
 }
+
+.rm {
+  background-color: red;
+  border-radius: 50%;
+  color: white;
+  border: none;
+  font-weight: bold;
+}
