@@ -3,6 +3,7 @@ import TodoList from "./Todo/TodoList";
 import Context from './context';
 import AddTodo from "./Todo/AddTodo";
 import Loader from "./Loader";
+import Modal from "./Modal/Modal"
 
 function App() {
   const [todos, setTodos] = React.useState([]);
@@ -46,6 +47,7 @@ function App() {
     <Context.Provider value={{ removeTask }}>
       <div className="wrapper">
         <h1>React Learn project </h1>
+        <Modal />
         <AddTodo onCreate={addTodo} />
         {loading && <Loader />}
         {todos.length ? (<TodoList tasks={todos} onToggle={toggleTask} />
