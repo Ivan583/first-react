@@ -8,7 +8,8 @@ function AddTodo({ onCreate }) {
         event.preventDefault()
 
         if (value.trim()) {
-            onCreate(value)
+            onCreate(value);
+            setValue('');
         }
     }
 
