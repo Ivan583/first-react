@@ -28,7 +28,7 @@ function App() {
     <Context.Provider value={{ removeTask }}>
       <div className="wrapper">
         <h1>React Learn project </h1>
-        <TodoList tasks={todos} onToggle={toggleTask} />
+        {todos.length ? <TodoList tasks={todos} onToggle={toggleTask} /> : <p>No tasks.</p>}
       </div>
     </Context.Provider>
   );
