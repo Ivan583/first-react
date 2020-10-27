@@ -10,7 +10,9 @@ function App() {
     fetch('https://jsonplaceholder.typicode.com/todos?_limit=5')
       .then(response => response.json())
       .then(todos => {
-        setTodos(todos)
+        setTimeout(() => {
+          setTodos(todos)
+        }, 2000)
       })
   }, [])
 
